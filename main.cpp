@@ -3,14 +3,14 @@
 
 using namespace std;
 
-string name = "your name here";
-string nim = "your id here";
-string cls = "your class here";
+string name = "Supra Yogi";
+string nim = "1301174264";
+string cls = "IF-41-08";
 
 int main() {
-    cout << "Hello world!, "<<name
-         <<",\nid: " << nim
-         <<"\nfrom " << cls<< endl;
+    cout << "Hello world!, "<<name;
+    cout <<",\nid: " << nim;
+    cout <<"\nfrom " << cls<< endl;
 
     cout<<endl<<"------------------------------"<<endl;
     cout<<"Exercise 1"<<endl;

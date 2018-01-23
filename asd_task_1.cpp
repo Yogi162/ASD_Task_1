@@ -11,11 +11,15 @@ void exercise_1() {
             but are not a multiple of 5,
             between 100 and 200 (both included)
     */
-
+    int n;
     // ===========================
     // YOUR CODE HERE
     cout<<"your code here"<<endl;
-
+    for (n=100;n<201;n++)
+    {
+        if ((n%7==0) && (n%5!=0))
+            cout<<n<<", ";
+    }
 
 
 
