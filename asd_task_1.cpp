@@ -32,10 +32,15 @@ void exercise_2(int n, int p) {
          TODO:  Write a procedure algorithm to
                 raise any number to any power.
         */
+    int x;
+    int i;
+    x=n;
+    for (i=1;i<p;i++)
+    {
+        x=x*n;
+    }
+    cout<<x<<endl;
 
-    // ===========================
-    // YOUR CODE HERE
-    cout<<"your code here"<<endl;
 
 
 
@@ -52,9 +57,19 @@ void exercise_3(int s1, int s2, int s3) {
                 given the size of the three sides
         */
 
-    // ===========================
-    // YOUR CODE HERE
-    cout<<"your code here"<<endl;
+    if ((s1==s2) && (s1==s3))
+    {
+            cout<<"equilateral"<<endl;
+    }
+    else if ((s1==s2) || (s1==s3) || (s2==s3))
+    {
+            cout<<"isosceles"<<endl;
+    }
+    else
+    {
+        cout<<"scalene"<<endl;
+    }
+
 
 
 
@@ -71,10 +86,21 @@ void exercise_4() {
                 and add it into an array of integer
                 until user inputs number 0
         */
+    int i;
+    int x;
     int arr[100];
-    // ===========================
-    // YOUR CODE HERE
-    cout<<"your code here"<<endl;
+    for (i=0;i<101;i++)
+    {
+
+        cin>>x;
+        arr[i]=x;
+        if (x==0)
+        {
+            break;
+        }
+
+    }
+
 
 
 
@@ -92,10 +118,15 @@ int exercise_5(int arr[],int f) {
                 and outputs its index; algorithm will
                 outputs -1 if such number is not found
         */
+    int i;
+    for (i=0;i<8;i++)
+    {
+        if (arr[i]==f)
+        {
+            return i;
+        }
+    }
 
-    // ===========================
-    // YOUR CODE HERE
-    cout<<"your code here"<<endl;
 
 
 
@@ -111,10 +142,25 @@ void exercise_6(int arr[],int x) {
          inside an unsorted array of integer,
          then insert a negative one (-1) behind such found number
         */
+    int i;
+    int j;
+    int temp1;
+    int temp2;
+    temp1=-1;
+    for (i=0;i<100;i++)
+    {
+        if (arr[i]==x)
+        {
+            for (j=i-1;j<100;j++)
+            {
+            temp2=arr[j];
+            arr[j]=temp1;
+            temp1=temp2;
+            }
+            break;
 
-    // ===========================
-    // YOUR CODE HERE
-    cout<<"your code here"<<endl;
+        }
+    }
 
 
 
